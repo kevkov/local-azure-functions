@@ -2,7 +2,7 @@ version: '3'
 services:
 
     local.storage.emulator:
-        image: "mcr.microsoft.com/azure-storage/azurite:latest"
+        image: "mcr.microsoft.com/azure-storage/azurite:3.14.0"
         container_name: local.storage.emulator
         ports:
             - 10000:10000
