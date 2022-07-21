@@ -7,7 +7,7 @@ COPY src ./src
 
 RUN cd /src/Local.Functions && \
     mkdir -p /home/site/wwwroot && \
-    dotnet publish *.csproj --output /home/site/wwwroot
+    dotnet publish *.csproj --runtime linux-x64 --output /home/site/wwwroot
 
 # To enable ssh & remote debugging on app service change the base image to the one below
 # FROM mcr.microsoft.com/azure-functions/dotnet:3.0-appservice
