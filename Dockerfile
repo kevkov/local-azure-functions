@@ -2,9 +2,6 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS installer-env
 
 # Copy .env variables through to Azure Function container
 ENV AzureWebJobsStorage=$AzureWebJobsStorage
-ENV BlobContainerName=$BlobContainerName
-ENV BlobOutputContainerName=$BlobOutputContainerName
-ENV QueueName=$QueueName
 
 COPY src ./src
 

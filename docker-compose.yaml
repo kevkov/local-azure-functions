@@ -18,8 +18,5 @@ services:
         environment:
             # Copy .env variables through to container
             - AzureWebJobsStorage
-            - BlobContainerName
-            - BlobOutputContainerName
-            - QueueName
         depends_on:
             - local.storage.emulator
